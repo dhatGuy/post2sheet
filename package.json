@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "tsnd --respawn --watch --rs src/app.ts",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,17 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "@types/node": "20.10.5",
+    "json-schema-to-ts": "^2.12.0",
+    "nodemon": "^3.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "5.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fastify/env": "4.3.0",
+    "fastify": "4.25.1",
+    "google-auth-library": "9.4.1",
+    "google-spreadsheet": "4.1.1",
+    "zod": "3.22.4"
+  }
 }
