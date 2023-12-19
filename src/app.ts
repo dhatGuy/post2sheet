@@ -25,7 +25,7 @@ async function main() {
     dotenv: true,
   });
   server.register(rootRoutes);
-  server.listen({ port: 8080 }, (err, address) => {
+  server.listen({ port: 3000, host: "0.0.0.0" }, (err, address) => {
     if (err) {
       console.error(err);
       process.exit(1);
