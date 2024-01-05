@@ -9,8 +9,8 @@ export async function postbackHandler(
   reply: FastifyReply,
 ) {
   try {
-    const { param1: sub_id, param2: reg, param3: aReg } = request.query;
-    console.log(sub_id, reg, aReg);
+    const { param1, param2, param3 } = request.query;
+    console.log(param1, param2, param3);
     const response = await saveToGoogleSheets(request.query);
     reply.code(200).send({
       status: 200,

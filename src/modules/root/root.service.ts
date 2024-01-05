@@ -3,9 +3,9 @@ import { JWT } from "google-auth-library";
 import { Querystring } from "./root.schema";
 
 export const saveToGoogleSheets = async ({
-  sub_id,
-  reg,
-  aReg,
+  param1,
+  param2,
+  param3,
 }: Querystring) => {
   try {
     const serviceAccountAuth = new JWT({
@@ -22,9 +22,9 @@ export const saveToGoogleSheets = async ({
     await doc.loadInfo();
 
     const row = await doc.sheetsByIndex[0].addRow({
-      Sub_id: sub_id,
-      Reg: reg,
-      aReg: aReg,
+      Sub_id: param1,
+      Reg: param2,
+      aReg: param3,
     });
 
     console.log("Saved to Google Sheets");
