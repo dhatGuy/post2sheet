@@ -1,8 +1,7 @@
 {
-  "name": "nodejs-sandbox",
+  "name": "post2sheet",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "Postback URL to save data to Google Sheets",
   "scripts": {
     "start": "node build/app.js",
     "dev": "tsnd --respawn --watch --rs src/app.ts",
@@ -13,14 +12,13 @@
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
   "keywords": [],
-  "author": "Ives van Hoorne",
+  "author": "Joseph Odunsi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
+    "url": "https://github.com/dhatGuy/post2sheet/issues"
   },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": "https://github.com/dhatGuy/post2sheet",
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.5.0",
     "@types/node": "20.10.5",
     "json-schema-to-ts": "^2.12.0",
     "ts-node-dev": "^2.0.0",
