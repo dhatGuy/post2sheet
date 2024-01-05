@@ -4,9 +4,9 @@ import { postbackHandler } from "./root.controller";
 const opts = {
   schema: {
     querystring: {
-      sub_id: { type: "integer" },
-      reg: { type: "integer" },
-      aReg: { type: "integer" },
+      param1: { type: "integer" }, // sub_id
+      param2: { type: "integer" }, // event name - reg
+      param3: { type: "integer" }, // request country - aReg
     },
   },
 };

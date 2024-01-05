@@ -1,9 +1,9 @@
 import { z } from "zod";
 
 export const QuerystringSchema = z.object({
-  sub_id: z.string().default(""),
-  reg: z.string().default(""),
-  aReg: z.string().default(""),
+  param1: z.string().default(""),
+  param2: z.string().default(""),
+  param3: z.string().default(""),
 });
 
 export type Querystring = z.infer<typeof QuerystringSchema>;
