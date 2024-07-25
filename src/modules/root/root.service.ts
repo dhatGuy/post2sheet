@@ -23,7 +23,7 @@ export const saveToGoogleSheets = async ({
     });
 
     const doc = new GoogleSpreadsheet(
-      "1z2wkBFC-83aLBQ8fnj-2eRhYcG-GGE4x7u6h5CH9T84",
+      process.env.GOOGLE_SHEET_ID as string,
       serviceAccountAuth,
     );
 
@@ -43,7 +43,7 @@ export const saveToGoogleSheets = async ({
       // message: "Saved to Google Sheets",
     };
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     throw error;
   }
 };
