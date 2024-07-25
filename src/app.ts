@@ -4,12 +4,9 @@ import rootRoutes from "./modules/root/root.route";
 
 const envSchema = {
   type: "object",
-  required: ["GOOGLE_PRIVATE_KEY", "GOOGLE_SERVICE_ACCOUNT_EMAIL"],
+  required: ["BASE64_ENCODED_SERVICE_ACCOUNT"],
   properties: {
-    GOOGLE_PRIVATE_KEY: {
-      type: "string",
-    },
-    GOOGLE_SERVICE_ACCOUNT_EMAIL: {
+    BASE64_ENCODED_SERVICE_ACCOUNT: {
       type: "string",
     },
   },

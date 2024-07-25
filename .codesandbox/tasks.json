@@ -11,7 +11,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
+      "command": "yarn dev",
       "runAtStart": true,
       "preview": {
         "port": 8080
