@@ -16,12 +16,12 @@ export async function postbackHandler(
       status: 200,
       ...response,
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error(error);
     reply.code(500).send({
       success: false,
       status: 500,
-      error: "Something went wrong",
+      error: error.message ?? "Something went wrong",
     });
   }
 }

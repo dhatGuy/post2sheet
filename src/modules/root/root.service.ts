@@ -30,9 +30,10 @@ export const saveToGoogleSheets = async ({
     await doc.loadInfo();
 
     const row = await doc.sheetsByIndex[0].addRow({
-      Sub_id: param1 ?? "",
-      Reg: param2 ?? "",
-      aReg: param3 ?? "",
+      Sub_id: param1,
+      Reg: param2,
+      aReg: param3,
+      dateCreated: new Date().toISOString(),
     });
 
     console.log("Saved to Google Sheets");
