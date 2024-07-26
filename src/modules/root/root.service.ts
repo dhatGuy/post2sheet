@@ -33,7 +33,7 @@ export const saveToGoogleSheets = async ({
     const row = await doc.sheetsByIndex[0].addRow({
       Click_tid: param1,
       Reg: param2,
-      aReg: param3,
+      Country: param3,
       Sub_id: param4,
       dateCreated: new Date().toISOString(),
     });
