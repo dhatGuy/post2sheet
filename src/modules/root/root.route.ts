@@ -8,8 +8,9 @@ const opts = {
         param1: { type: "string" }, // sub_id
         param2: { type: "string" }, // event name - reg
         param3: { type: "string" }, // request country - aReg
+        param4: { type: "string" }, // Click_tid
       },
-      required: ["param1", "param2", "param3"],
+      required: ["param1", "param2", "param3", "param4"],
     },
   },
 };

@@ -14,6 +14,7 @@ export const saveToGoogleSheets = async ({
   param1,
   param2,
   param3,
+  param4,
 }: Querystring) => {
   try {
     const serviceAccountAuth = new JWT({
@@ -33,6 +34,7 @@ export const saveToGoogleSheets = async ({
       Sub_id: param1,
       Reg: param2,
       aReg: param3,
+      Click_tid: param4,
       dateCreated: new Date().toISOString(),
     });
 
